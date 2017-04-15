@@ -4,6 +4,7 @@ then
 sudo apt-get install unzip;
 fi
 
+mkdir assets
 wget -O chromedriver_pkg.zip https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux32.zip
 unzip chromedriver_pkg.zip -d assets/ && rm -rf chromedriver_pkg.zip
 
