@@ -4,6 +4,11 @@ then
 sudo apt-get install unzip;
 fi
 
+if [ $(dpkg-query -W -f='${Status}' xvfb 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+sudo apt-get install xvfb;
+fi
+
 mkdir assets
 wget -O chromedriver_pkg.zip https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux32.zip
 unzip chromedriver_pkg.zip -d assets/ && rm -rf chromedriver_pkg.zip
