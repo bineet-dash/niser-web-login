@@ -34,3 +34,7 @@ sudo mkdir -p /usr/local/src/niserauth
 sudo cp -R assets /usr/local/src/niserauth/
 sudo cp niser_web_login /usr/local/bin
 
+echo "---------------------------------"
+echo
+echo
+echo "Now connect to NISER WiFi, and you can automatically login by running the command 'niser_web_login' from your terminal." 
